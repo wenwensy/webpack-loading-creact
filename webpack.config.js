@@ -8,7 +8,10 @@ module.exports = {
         clean: true,
     },
     module:{
-        rules:[],
+        rules:[{
+            test:/\.js$/,
+            loader:'./loaders/test-loader',
+        }],
     },
     plugins:[
         new HtmlWebpackPlugin({

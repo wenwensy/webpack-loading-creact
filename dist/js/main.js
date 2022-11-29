@@ -15,7 +15,7 @@
   \*********************/
 /***/ (() => {
 
-eval("console.log('hello loader')\r\n\r\n\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("throw new Error(\"Module build failed (from ./loaders/demo/tongbuLoader.js):\\nReferenceError: content is not defined\\n    at module.exports (D:\\\\Webpack\\\\webpack-loading-creact\\\\loaders\\\\demo\\\\tongbuLoader.js:16:24)\");\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 
@@ -24,7 +24,7 @@ eval("console.log('hello loader')\r\n\r\n\n\n//# sourceURL=webpack:///./src/main
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
 /******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/main.js"]();
 /******/ 	

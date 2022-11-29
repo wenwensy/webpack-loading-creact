@@ -8,10 +8,18 @@ module.exports = {
         clean: true,
     },
     module:{
-        rules:[{
+        rules:[
+        //     {
+        //     test:/\.js$/,
+        //     loader:'./loaders/test-loader',
+        // },
+        {
             test:/\.js$/,
-            loader:'./loaders/test-loader',
-        }],
+            // loader执行顺序从右到左从下到上
+            use:['./loaders/demo/tongbuLoader','./loaders/demo/asyncLoader']
+            // loader:'./loaders/demo/tongbuLoader',
+        },
+    ],
     },
     plugins:[
         new HtmlWebpackPlugin({

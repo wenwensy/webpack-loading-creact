@@ -14,10 +14,18 @@ module.exports = {
         //     loader:'./loaders/test-loader',
         // },
         {
-            test:/\.js$/,
+            // test:/\.js$/,
             // loader执行顺序从右到左从下到上
-            use:['./loaders/demo/tongbuLoader','./loaders/demo/asyncLoader']
+            // use:['./loaders/demo/tongbuLoader','./loaders/demo/asyncLoader']
             // loader:'./loaders/demo/tongbuLoader',
+            loader:'./loaders/clean-log-loader'
+        },
+             {
+            test:/\.js$/,
+            loader:'./loaders/banner-loader',
+            options: {
+                author: '温温'
+            }
         },
     ],
     },
